@@ -1,0 +1,45 @@
+robot:
+  base_mass_kg: 1.8
+  nominal_capacity_wh: 19.98
+  initial_soc: 0.80
+  operating_floor_soc: 0.10
+  operating_ceiling_soc: 0.90
+  max_speed_mps: 0.26
+  speed_mps: 0.20
+  rolling_resistance: 0.025
+  drivetrain_efficiency: 0.55
+  auxiliary_power_w: 4.5
+station:
+  pv_peak_w: 30.0
+  capacity_wh: 100.0
+  initial_soc: 0.50
+  floor_soc: 0.10
+  ceiling_soc: 0.90
+  charger_output_limit_w: 10.0
+  charger_efficiency: 0.90
+  storage_charge_efficiency: 0.95
+  storage_discharge_efficiency: 0.95
+tasks:
+  arrival_rate_per_hour: 4.0
+  workday_start_hour: 8
+  workday_end_hour: 16
+  deadline_multiplier: 2.0
+  candidate_count: 6
+  demand_mode: changing
+simulation:
+  episode_hours: 72
+  decision_interval_s: 60.0
+  physics_interval_s: 10.0
+  solar_forecast_horizon_h: 4
+  scheduler_horizon_h: 2
+estimator:
+  residual_window: 50
+  reserve_quantile: 0.95
+  fixed_robot_margin_wh: 0.22
+  fixed_solar_margin_wh: 0.50
+training:
+  benchmark_steps: 2048
+  search_steps: 8192
+  final_steps: 20000
+  seeds: [11, 23, 37, 53, 71]
+

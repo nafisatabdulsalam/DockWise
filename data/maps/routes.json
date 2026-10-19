@@ -1,0 +1,18 @@
+{
+  "map": {
+    "name": "dockwise_aisles",
+    "width_m": 20.0,
+    "height_m": 20.0,
+    "dock": {"x_m": 1.0, "y_m": 1.0, "yaw_rad": 0.0},
+    "description": "Fixed aisle centreline routes; distances include obstacle-respecting bends."
+  },
+  "routes": [
+    {"destination_id": 0, "name": "A1", "x_m": 4.0, "y_m": 4.0, "distance_m": 8.0, "turns": 2, "acceleration_events": 3},
+    {"destination_id": 1, "name": "A2", "x_m": 4.0, "y_m": 16.0, "distance_m": 22.0, "turns": 4, "acceleration_events": 5},
+    {"destination_id": 2, "name": "B1", "x_m": 10.0, "y_m": 4.0, "distance_m": 14.0, "turns": 3, "acceleration_events": 4},
+    {"destination_id": 3, "name": "B2", "x_m": 10.0, "y_m": 16.0, "distance_m": 28.0, "turns": 5, "acceleration_events": 6},
+    {"destination_id": 4, "name": "C1", "x_m": 17.0, "y_m": 4.0, "distance_m": 23.0, "turns": 4, "acceleration_events": 5},
+    {"destination_id": 5, "name": "C2", "x_m": 17.0, "y_m": 16.0, "distance_m": 37.0, "turns": 6, "acceleration_events": 7}
+  ]
+}
+
